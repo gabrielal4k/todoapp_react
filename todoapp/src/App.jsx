@@ -1,10 +1,11 @@
+import Todo from "./component/Todo"
 
 
 function App() {
 
   return (
     <div className="App">
-     App
+      <Todo />
     </div>
   )
 }
