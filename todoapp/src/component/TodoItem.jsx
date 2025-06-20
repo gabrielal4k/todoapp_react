@@ -3,7 +3,7 @@ import styles from './todoitem.module.css';
 export default function TodoItem({item, todos, setTodos}) {
 
     function handleDelete(item){
-        console.log(`Deleting item: ${item.name}`);
+        console.log(`Deleting item: ${item.name }`);
 
         todos = todos.filter((todo) => todo !== item);
         setTodos(todos);
