@@ -32,3 +32,8 @@
     outline: none;
     background-color: darkred;
 }
+
+.completed{
+    text-decoration: line-through;
+    color: grey;
+}

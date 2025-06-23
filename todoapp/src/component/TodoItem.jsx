@@ -9,11 +9,20 @@ export default function TodoItem({item, todos, setTodos}) {
         setTodos(todos);
     };
 
+    function handleClickItem(name){
+        const newTodos = todos.map((todo) => todo.name === name ? {...todo, done: !todo.done} : todo);
+        setTodos(newTodos);
+        // console.log(newTodos);
+    };
+
+    const itemClass = item.done ? styles.completed : "";
 
     return (
         <div className={styles.modernItem}>
             <div className={styles.modernItemName}>
-                {item.name}
+                <span className={itemClass} onClick={() => handleClickItem(item.name)}>
+                    {item.name}
+                </span>
                 <span>
                     <button 
                     onClick={() => handleDelete(item)}

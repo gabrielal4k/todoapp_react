@@ -1,0 +1,17 @@
+
+
+.footer{
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #333;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.item{
+    margin: 50px;
+}
